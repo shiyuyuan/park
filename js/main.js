@@ -3,7 +3,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+    $(function(){
+       var h =  $(".apply-con").find('.apply-li').eq(0).height();
+        $(".apply-con").find('.apply-li').eq(1).height(h); 
+        $(".apply-con").find('.apply-li').eq(1).find('textarea').height(h-100); 
+        $(window).resize(function(event) {
+         var h =  $(".apply-con").find('.apply-li').eq(0).height();
+         $(".apply-con").find('.apply-li').eq(1).height(h); 
+          $(".apply-con").find('.apply-li').eq(1).find('textarea').height(h-100); 
+      });
+    })
 (function($) {
 
 	skel.breakpoints({

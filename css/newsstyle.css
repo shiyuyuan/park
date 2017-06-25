@@ -101,12 +101,30 @@ header.major {
     background: transparent;
     border: 0;
     border-bottom: 1px solid #fff;
+    width: 78%;
+    margin-left: 24%;
 }
-
+.apply-con .formgroup input:focus{
+   border:0;
+    border-bottom: 1px solid #fff;
+   outline: none;
+}
+.apply-con .formgroup1 input {
+    width: 46%;
+    margin-left: 56%;
+}
+.apply-con .formgroup2 input {
+    width: 61%;
+    margin-left: 41%;
+}
+.apply-con .formgroup3 input {
+    width: 33%;
+    margin-left: 69%;
+}
 .apply-con .formgroup textarea {
     background: transparent;
     border: 1px solid #fff;
-    height: 7.9em;
+    height: 6.9em;
     margin-top: 0.5em;
 }
 
@@ -118,8 +136,11 @@ header.major {
     vertical-align: top;
     margin-top: 10px;
     margin-bottom: 0;
+   
 }
-
+.applymedia .formgroup label{
+ position: absolute;
+}
 .apply-con {
     width: 80%;
     margin: 0 auto;
@@ -131,6 +152,7 @@ header.major {
     float: left;
     border: 1px solid #fff;
     padding: 5px 29px 16px 29px;
+    /*height: 11em;*/
 }
 
 .apply-li:last-child {
@@ -421,6 +443,21 @@ header.major {
     padding-left: 20px;
     padding-right: 20px;
 }
+.applymedia .formgroup label {
+    position: relative;
+}
+.apply-con .formgroup input {
+    width: 100%;
+    margin-left: 0;
+}
+.apply-con .formgroup1 input {
+   width: 100%;
+    margin-left: 0;
+}
+.apply-con .formgroup2 input {
+   width: 100%;
+    margin-left: 0;
+}
 }
 
 @media screen and (max-width: 890px) {
@@ -500,5 +537,13 @@ header.major {
     float: left;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+.apply-li {
+    width: 100%;
+
+}
+.apply-li:last-child {
+    border-left: 1px solid #fff;
+    border-top: none;
 }
 }
